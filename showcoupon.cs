@@ -76,14 +76,6 @@ namespace Project
                 {
                     btselect_menu.Visible = true;
                 }
-                //if (sumpoint == 10)
-                //{
-                //    btredeem_coupon.Visible = true;
-                //}
-                //else
-                //{
-                //    btselect_menu.Visible = true;
-                //}
             }
             else //สมาชิกใหม่
             {
@@ -111,7 +103,6 @@ namespace Project
             this.Close();
         }
 
-        //ปิด
         private void btback_Click(object sender, EventArgs e)
         {
             start st = new start();
