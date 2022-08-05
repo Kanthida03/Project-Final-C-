@@ -32,8 +32,6 @@ namespace Project
             dateTimePicker1.Value = new DateTime(2022, 6, 25);
             dateTimePicker2.Value = DateTime.Now;
 
-            //lbdate1.Text = dateTimePicker1.Value.ToString("dd/MM/yyyy");
-            //lbdate2.Text = dateTimePicker2.Value.ToString("dd/MM/yyyy");
 
             lbusername.Text = copyusername;
 
@@ -42,7 +40,7 @@ namespace Project
             conn.Open();
             MySqlCommand cmd;
             cmd = conn.CreateCommand();
-            cmd.CommandText = $"SELECT * FROM admin WHERE username = '{lbusername.Text}'"; //เลือกข้อมูลจากชื่อเมนู
+            cmd.CommandText = $"SELECT * FROM admin WHERE username = '{lbusername.Text}'"; 
             MySqlDataReader row = cmd.ExecuteReader();
             if (row.HasRows)
             {
