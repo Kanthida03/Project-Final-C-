@@ -104,7 +104,6 @@ namespace Project
         {
             if (dateTimePicker1.Text != "" || dateTimePicker2.Text != "")
             {
-                //mounth = int.Parse(dateTimePicker2.Value.ToString("MM")) + 1;
                 MySqlConnection conn = databaseConnection();
                 DataSet ds = new DataSet();
                 conn.Open();
