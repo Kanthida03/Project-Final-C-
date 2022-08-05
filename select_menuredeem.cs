@@ -286,7 +286,6 @@ namespace Project
                     {
                         p.Add(row.GetInt32("point"));
                         cp.Add(row.GetInt32("coupon"));
-                        //sumpoint = row.GetInt32("MAX(point)");
                     }
                     sumpoint = p[p.Count - 1];
                     sumcoupon = cp[cp.Count - 1];
